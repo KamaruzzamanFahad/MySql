@@ -62,4 +62,10 @@ DELETE FROM teachers WHERE ID = 3;
 UPDATE teachers set Sallery = Sallery +5000 WHERE Sallery >500;
 
 SELECT upper(Name) FROM teachers;
-
+SELECT CONCAT('welcome', 'to my sql');
+SELECT CONCAT(Name,'is', Age, 'yers old') FROM students;
+SELECT GREATEST(1,34,15,5,7,3,00);
+SELECT LEAST(1,34,15,5,7,3,00);
+SELECT POW(2,3);
+SELECT TRUNCATE(10.265569889,2);
+SELECT RAND();
