@@ -77,3 +77,27 @@ SELECT MAX(Gpa) FROM students;
 SELECT MIN(Gpa) FROM students;  
 SELECT SUM(Gpa), AVG(Age) FROM students;
 SELECT Name,Roll,Gender,Age, MIN(Gpa) FROM students WHERE Gender = ('mail') ;
+
+ALTER TABLE teachers 
+ADD age int;
+ALTER TABLE teachers
+CHANGE age Age int;
+ALTER TABLE teachers
+DROP COLUMN Age;
+
+
+-- GROUP BY clause
+SELECT 
+FROM TABLE
+[WHERE condition] 
+[GROUP BY group_by_expression] 
+[ORDER BY column];
+
+ SELECT Department,SUM(Salary) 
+ FROM teacher 
+ GROUP BY Department;
+
+SELECT dept, SUM(Sallery)
+FROM teachers
+GROUP BY dept
+ORDER BY SUM(Sallery) DESC;
