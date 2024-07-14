@@ -69,3 +69,11 @@ SELECT LEAST(1,34,15,5,7,3,00);
 SELECT POW(2,3);
 SELECT TRUNCATE(10.265569889,2);
 SELECT RAND();
+
+-- Aggregate
+DESCRIBE students;
+SELECT COUNT(*) FROM students;
+SELECT MAX(Gpa) FROM students;
+SELECT MIN(Gpa) FROM students;  
+SELECT SUM(Gpa), AVG(Age) FROM students;
+SELECT Name,Roll,Gender,Age, MIN(Gpa) FROM students WHERE Gender = ('mail') ;
